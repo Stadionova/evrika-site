@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box; // это правило, которое позволяет правильно считать ширину
+}
+
+.container {
+    width: 1440px; // ширина контейнера всего сайта
+    background-color: rebeccapurple;
+}
+
+.navbar__wrap {
+    // для navbar нужно задать минимальную высоту
+    min-height: 145px;
+    // все элементы хэдера с логотипом выстроились в линию
+    display: flex;
+    // всё это выравниваю относительно друг друга по центру
+    align-items: center;
+    // наш блок выделила красным цветом для наглядности
+    // border: 1px solid red;
+    // justify-content: space-between;
+    .navbar__logo {
+        width: 187px;
+        height: 149px;
+        background-color: #74cfb7;
+        // отодвинула блоки справа
+        margin-right: 49px;
+        // отодвинула логотип слева от границы
+        margin-left: 137px;
+    }
+    .navbar__name-address {
+        // делаю элемент блочным, чтобы он занимал всю строчку
+        // и переносил следующий за ним блок на следующую строку
+        display: block;
+        width: 298px;
+        height: 49px;
+        margin-right: 43px;
+        .navbar__name {
+            width: 246px;
+            height: 24px;
+            color: #1f252d;
+            font-family: Roboto, medium;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .navbar__address {
+            width: 298px;
+            height: 17px;
+            color: #1f252d;
+            font-family: Roboto, light;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+    .navbar__number-timetable {
+        display: block;
+        width: 312px;
+        height: 49px;
+        margin-right: 46px;
+        .navbar__number {
+            width: 174px;
+            height: 24px;
+            color: #1f252d;
+            font-family: Roboto, medium;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .navbar__timetable {
+            width: 312px;
+            height: 17px;
+            color: #1f252d;
+            font-family: Roboto, light;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+    .navbar__button {
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        width: 222px;
+        height: 48px;
+        box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
+        border-radius: 4px;
+        background-color: #079fc2;
+        border: none;
+        margin-right: 130px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

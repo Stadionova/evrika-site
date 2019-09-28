@@ -1,1 +1,2 @@
-alert('hello!');
+import "./styles.less";
+// alert('hello!');

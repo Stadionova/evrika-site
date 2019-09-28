@@ -6,11 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Эврика</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: Roboto;
+            /* Имя шрифта */
+            src: url(./fonts);
+            /* Путь к файлу со шрифтом */
+        }
+    </style>
 </head>
 
 <body>
-
+    <script src="./dist/main.js"></script>
+    <!-- hero - это главная часть макета (шапка) -->
+    <!-- внутри header есть шапка и главный блок hero -->
+    <!-- navbar - это блок с навигацией -->
+    <!-- hero - это блок с картинкой и заголовком -->
+    <!-- header.header>.navbar+.hero|c -->
+    <header class="header">
+        <div class="navbar">
+            <!-- div.container|c -->
+            <!-- создала контейнер в навигационной панели -->
+            <div class="container"></div>
+            <!-- в контейнере создаю навигационную панель в шапке страницы с логотипом и меню -->
+            <div class="navbar__wrap">
+                <!-- создала обёртку для всего блока с логотипом и кнопками -->
+                <div class="navbar__logo">
+                    <div class="navbar__logo-inside">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="navbar__name-address">
+                    <div class="navbar__name">
+                        <!-- использую тег span вместо тега p -->
+                        <span>Агентство недвижимости</span>
+                    </div>
+                    <div class="navbar__address">
+                        <span>Москва, «Беляево», ул. Миклухо-Маклая, д. 43</span>
+                    </div>
+                </div>
+                <div class="navbar__number-timetable">
+                    <div class="navbar__number">
+                        <span>+7 (495) 276-03-03</span>
+                    </div>
+                    <div class="navbar__timetable">
+                        <span>Пн—Пт: с 09.00 до 21.00, Сб—Вс: с 10.00 до 17.00</span>
+                    </div>
+                </div>
+                <button class="navbar__button">Бесплатная консультация</button>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- создаю контейнер с заданной шириной  -->
+        <!-- /.navbar -->
+        <div class="hero"></div>
+        <!-- /.hero -->
+    </header>
+    <!-- /.header -->
 </body>
 
 </html>
