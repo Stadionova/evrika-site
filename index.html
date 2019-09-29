@@ -68,23 +68,70 @@
         </div>
         <div class="hero">
             <h1 class="hero__title">Купить квартиру в новостройке</h1>
-            <div class="hero__scroll">
+            <div class="hero__slider">
                 <div>
-                    <div class="hero__scroll__block">
+                    <div class="hero__slider__name">
                         <span>Стоимость, млн руб.</span>
                     </div>
-                    <div class="hero__scroll__bar">
-                        <div class="slidecontainer">
-                            <p>Default range slider:</p>
-                            <input type="range" min="1" max="100" value="50">
-
-                            <p>Custom range slider:</p>
-                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <div class="hero__slider__line">
+                        <input type="range" min="1" max="100" step="any" class="slider slider-left" id="myRange">
+                        <input type="range" min="1" max="100" step="any" class="slider slider-right" id="myRange">
+                        <div>
+                            <div><label class="checker-label checker-size first" for="sone-id">
+                                    <input class="checker-input checker-active-color" hidden id="sone-id"
+                                        type="checkbox">
+                                    <span class="checker-pseudo-input checker-color"></span>
+                                    <span class="checker-text">Москва и Новая Москва</span>
+                                </label>
+                            </div>
+                            <div><label class="checker-label checker-size second" for="sone-id">
+                                    <input class="checker-input checker-active-color" hidden id="sone-id"
+                                        type="checkbox">
+                                    <span class="checker-pseudo-input checker-color"></span>
+                                    <span class="checker-text">Московская область</span>
+                                </label>
+                            </div>
                         </div>
                         <div class="hero__scroll__bar-block"></div>
                         <div class="hero__scroll__address"></div>
                         <div class="hero__scroll__address"></div>
                     </div>
+                </div>
+                <div class="table-div">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="text-arrow">
+                                    <div><span>Станция метро</span></div>
+                                    <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-arrow">
+                                    <div><span>Тип жилья</span></div>
+                                    <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-arrow">
+                                    <div><span>Площадь</span></div>
+                                    <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-arrow">
+                                    <div><span>Тип отделки</span></div>
+                                    <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="text-arrow">
+                                    <div><span>Срок сдачи</span></div>
+                                    <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
