@@ -16,10 +16,10 @@ module.exports = {
           ],
         },
         {
-            test: /\.(png|jpe?g|gif|svg|eot|ttf|woff|woff2)$/i,
+            test: /\.(png|jpe?g|jpg|gif|svg|eot|ttf|woff|woff2)$/i,
             loader: 'url-loader',
             options: {
-            limit: 8192,
+            // limit: 8192000,
             },
         },
       ],

@@ -30,6 +30,7 @@
             <!-- создала контейнер в навигационной панели -->
             <div class="container"></div>
             <!-- в контейнере создаю навигационную панель в шапке страницы с логотипом и меню -->
+            <!-- navbar__wrap - это блок с логотипом -->
             <div class="navbar__wrap">
                 <!-- создала обёртку для всего блока с логотипом и кнопками -->
                 <div class="navbar__logo">
@@ -43,7 +44,7 @@
                         <span>Агентство недвижимости</span>
                     </div>
                     <div class="navbar__address">
-                        <img src="img/metro.jpg" alt="metro">
+                        <img src="img/metro.png" alt="metro">
                         <span>Москва, «Беляево», ул. Миклухо-Маклая, д. 43</span>
                     </div>
                 </div>
@@ -61,7 +62,32 @@
         </div>
         <!-- создаю контейнер с заданной шириной  -->
         <!-- /.navbar -->
-        <div class="hero"></div>
+        <!-- hero - это блок с главной фото в шапке -->
+        <div class="menu">
+
+        </div>
+        <div class="hero">
+            <h1 class="hero__title">Купить квартиру в новостройке</h1>
+            <div class="hero__scroll">
+                <div>
+                    <div class="hero__scroll__block">
+                        <span>Стоимость, млн руб.</span>
+                    </div>
+                    <div class="hero__scroll__bar">
+                        <div class="slidecontainer">
+                            <p>Default range slider:</p>
+                            <input type="range" min="1" max="100" value="50">
+
+                            <p>Custom range slider:</p>
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        </div>
+                        <div class="hero__scroll__bar-block"></div>
+                        <div class="hero__scroll__address"></div>
+                        <div class="hero__scroll__address"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- /.hero -->
     </header>
     <!-- /.header -->

@@ -10,29 +10,27 @@
     // всё это выравниваю относительно друг друга по центру
     align-items: center;
     // наш блок выделила красным цветом для наглядности
-    // border: 1px solid red;
-    // justify-content: space-between;
-    width: 1440px;
-    height: 145px;
+    justify-content: space-between;
     background-color: #f7f7f7;
     .navbar__logo {
-        width: 187px;
         height: 149px;
         background-color: #74cfb7;
         // отодвинула блоки справа
         margin-right: 42px;
         // отодвинула логотип слева от границы
         margin-left: 130px;
+        .navbar__logo-inside {
+            margin-left: 7px;
+            margin-top: 14px;
+        }
     }
     .navbar__name-address {
         // делаю элемент блочным, чтобы он занимал всю строчку
         // и переносил следующий за ним блок на следующую строку
-        display: block;
-        width: 360px;
         height: 49px;
         margin-right: 15px;
         .navbar__name {
-            width: 246px;
+            display: block;
             height: 24px;
             color: #1f252d;
             font-family: Roboto, medium;
@@ -41,7 +39,7 @@
             margin-bottom: 8px;
         }
         .navbar__address {
-            width: 330px;
+            display: block;
             height: 17px;
             color: #1f252d;
             font-family: Roboto, light;
@@ -50,18 +48,15 @@
             img {
                 width: 17px;
                 height: 12px;
-                background-color: #fbaa34;
                 margin-right: 13px;
             }
         }
     }
     .navbar__number-timetable {
-        display: block;
-        width: 312px;
         height: 49px;
         margin-right: 46px;
         .navbar__number {
-            width: 174px;
+            display: block;
             height: 24px;
             color: #1f252d;
             font-family: Roboto, medium;
@@ -70,7 +65,7 @@
             margin-bottom: 8px;
         }
         .navbar__timetable {
-            width: 312px;
+            display: block;
             height: 17px;
             color: #1f252d;
             font-family: Roboto, light;
@@ -83,7 +78,6 @@
         font-family: Roboto;
         font-size: 14px;
         font-weight: 400;
-        width: 222px;
         height: 48px;
         box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
         border-radius: 4px;
@@ -93,10 +87,89 @@
     }
 }
 
+.navbar__button:hover {
+    background-color: #1790ac;
+    border-color: #214d4d;
+}
 
+.menu {
+    height: 67px;
+    background-color: rebeccapurple;
+}
 
+.hero {
+    background: url(../img/main-top-bg7.png) no-repeat center;
+    background-size: cover;
+    height: 419px;
+    .hero__title {
+        height: 48px;
+        color: #ffffff;
+        font-family: Roboto, medium;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        padding-top: 72px;
+        margin: 0;
+    }
+}
 
+.hero__scroll {
+    width: 1180px;
+    height: 191px;
+    background-color: #ffffff;
+    // чтобы внутренний div разместить по центру другого div
+    margin: 0 auto;
+    padding: 28px;
+    .hero__scroll__block {
+        width: 1126px;
+        border: 1px solid red;
+        height: 133px;
+    }
+}
 
+.hero__scroll__name span {
+    // width: 132px;
+    height: 17px;
+    color: #1f252d;
+    font-family: Roboto, light;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.slidecontainer {
+    width: 100%;
+}
+  
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #4CAF50;
+    cursor: pointer;
+}
 
 
 
