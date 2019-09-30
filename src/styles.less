@@ -16,9 +16,9 @@
         height: 149px;
         background-color: #74cfb7;
         // отодвинула блоки справа
-        margin-right: 42px;
+        // margin-right: 42px;
         // отодвинула логотип слева от границы
-        margin-left: 130px;
+        // margin-left: 130px;
         .navbar__logo-inside {
             margin-left: 7px;
             margin-top: 14px;
@@ -91,11 +91,6 @@
 .navbar__button:hover {
     background-color: #1790ac;
     border-color: #214d4d;
-}
-
-.menu {
-    height: 67px;
-    background-color: rebeccapurple;
 }
 
 .hero {
@@ -232,6 +227,9 @@
         user-select: none;
         line-height: 1em;
     }
+    .first {
+        padding-bottom: 8px;
+    }
     .checker-label:hover .checker-input:not(:checked)~.checker-pseudo-input {
         border-color: #404853;
     }
@@ -239,7 +237,7 @@
         width: 159px;
         height: 17px;
         color: #1f252d;
-        font-family: "Roboto Light";
+        font-family: Roboto, light;
         font-size: 14px;
         font-weight: 300;
     }
@@ -248,58 +246,172 @@
 .table-div {
     background-color: #f7f7f7;
     table {
-        border-collapse: collapse
+        border-collapse: collapse;
+        tr td {
+            width: 190px;
+            height: 48px;
+            border: 1px solid #e7e7e7;
+            list-style-type: none;
+            margin-top: 50px;
+            padding-left: 15px;
+            .text-arrow {
+                display: flex;
+                .arrow {
+                    margin-left: 36px;
+                }
+            }
+        }
+        .button-search {
+            width: 190px;
+            padding: 0;
+            button {
+                width: 190px;
+                height: 48px;
+                box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+                background-color: #079fc2;
+                border: none;
+                padding: 0px;
+                span {
+                    width: 45px;
+                    height: 17px;
+                    color: #ffffff;
+                    font-family: Roboto, medium;
+                    font-size: 13px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+        }
     }
 }
 
-tr td {
-    width: 190px;
-    height: 48px;
-    border: 1px solid #e7e7e7;
-    list-style-type: none;
-    margin-top: 50px;
-    padding-left: 15px;
+.table-div {
+    .button-search:hover {
+        background-color: white;
+    }
 }
 
-.text-arrow {
-    display: flex;
+.menu {
+    height: 67px;
+    padding-top: 26px;
+    // margin-left: 130px;
 }
 
-.arrow {
-    margin-left: 36px;
+.search {
+    width: 14px;
+    height: 14px;
 }
 
-button {
-    width: 190px;
-    height: 48px;
-    box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    background-color: #079fc2;
-    border: none;
-    padding: 0px;
-}
-
-.button {
-    width: 190px;
-    padding: 0;
-}
-
-.first {
-    padding-bottom: 8px;
-}
-
-button span {
-    width: 45px;
+.menu__text {
     height: 17px;
-    color: #ffffff;
-    font-family: "Roboto Medium";
+    color: #404853;
+    font-family: Roboto, medium;
     font-size: 13px;
     font-weight: 500;
     text-transform: uppercase;
+    padding-right: 40px;
 }
 
+.menu__text:hover {
+    color: #71a0e0;
+}
 
-button:hover {
-    background-color: #2c7979;
+.line {
+    width: 1180px;
+    height: 19px;
+    background-color: #74cfb7;
+    margin: 0 auto;
+}
+
+.map {
+    height: 535px;
+    border: 20px solid #ffffff;
+
+    .map-yandex {
+        position: absolute;
+        width: 100%;
+    }
+
+    .map-placeholder {
+        height: 513px;
+        width: 100%;
+    }
+    
+    .map-info {
+        width: 420px;
+        height: 469px;
+        background: #FFFFFF;
+        border: 1px solid #C7C7C7;
+        box-sizing: border-box;
+        margin-top: 20px;
+        position: absolute;
+        img {
+            float: left;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-right: 18px;
+        }
+        .map-info__question {
+            height: 21px;
+            font-size: 18px;
+            line-height: 27px;
+            color: #37373F;
+        }
+        .map-info__answer {
+            font-size: 18px;
+            line-height: 26px;
+            color: #37373F;
+        }
+        .map-info__photo {
+            width: 67px;
+            height: 67px;
+            margin-left: 30px;
+            // background: url(../dist/img/round_photo_little.jpg);
+            .map-info__date {
+                margin-top: 50px;
+                .map-info__name {
+                    width: 300px;
+                    height: 22px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #37373F;
+                    margin-left: 90px;
+                    margin-top: 20px;
+                }
+                .map-info__prof {
+                    width: 85px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #37373F;
+                    margin-left: 90px;
+                    margin-top: 5px;
+                }
+                .map-info__addition {
+                    width: 279px;
+                    height: 22px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #5286EC;
+                    margin-left: 90px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.map-info__placeholder {
+    height: 513px;
+    width: 100%;
 }
