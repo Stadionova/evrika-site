@@ -340,18 +340,17 @@
     }
     
     .map-info {
-        width: 420px;
-        height: 469px;
-        background: #FFFFFF;
-        border: 1px solid #C7C7C7;
-        box-sizing: border-box;
+        width: 507px;
+        // height: 373px;
+        box-shadow: 0 11px 49px -35px rgba(0, 0, 0, 0.24);
+        background-color: #ffffff;
         margin-top: 20px;
         position: absolute;
+        margin-top: 61px;
+        margin-left: 130px;
         img {
             float: left;
-            margin-top: 20px;
-            margin-left: 30px;
-            margin-right: 18px;
+            margin-right: 23px;
         }
         .map-info__question {
             height: 21px;
@@ -368,7 +367,6 @@
             width: 67px;
             height: 67px;
             margin-left: 30px;
-            // background: url(../dist/img/round_photo_little.jpg);
             .map-info__date {
                 margin-top: 50px;
                 .map-info__name {
@@ -414,4 +412,68 @@
 .map-info__placeholder {
     height: 513px;
     width: 100%;
+}
+
+.map__photo-house {
+    display: block;
+}
+
+.map__title span {
+    height: 17px;
+    color: #1f252d;
+    font-family: Roboto, medium;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.map__metro {
+    margin-top: 13px;
+}
+
+.map__metro span {
+    width: 91px;
+    height: 17px;
+    color: #404853;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.map__metro img {
+    width: 17px;
+    height: 12px;
+    margin-right: 7px;
+}
+
+.map__address {
+    height: 17px;
+    color: #404853;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 9px;
+}
+
+.map__text {
+    margin-top: 22px;
+    display: block;
+}
+
+.map__button button {
+    width: 256px;
+    height: 36px;
+    box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
+    border-radius: 4px;
+    background-color: #079fc2;
+    border: none;
+    margin-top: 70px;
+}
+
+.map__button span {
+    width: 128px;
+    height: 17px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
 }
