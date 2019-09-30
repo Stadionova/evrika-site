@@ -323,41 +323,16 @@
     }
 }
 
-.map {
-    height: 535px;
-    border: 20px solid #ffffff;
-    display: flex;
-    .map-yandex {
-        width: 100%;
-        display: flex;
-    }
-    .map-info {
-        width: 507px;
-        box-shadow: 0 11px 49px -35px rgba(0, 0, 0, 0.24);
-        background-color: #ffffff;
-        margin-top: 20px;
-        position: absolute;
-        margin-top: 61px;
-        margin-left: 130px;
-        .map__photo-house {
-            display: block;
-            img {
-                float: left;
-                margin-right: 23px;
-            }
-        }
-    }
-    .map__arrow {
-        box-shadow: 0 11px 49px -35px rgba(0, 0, 0, 0.24);
-        position: absolute;
-        // чтобы расположить стрелку в правом верхнем углу карты
-        right: 0;
-        position: absolute;
+.map__arrow {
+    box-shadow: 0 11px 49px -35px rgba(0, 0, 0, 0.24);
+    position: absolute;
+    // чтобы расположить стрелку в правом верхнем углу карты
+    right: 0;
+    position: absolute;
+    margin-top: 46px;
+    margin-right: 47px;
+    .map__arrow img {
         margin-top: 46px;
-        margin-right: 47px;
-        .map__arrow img {
-            margin-top: 46px;
-        }
     }
 }
 
@@ -404,7 +379,7 @@
         border-radius: 4px;
         background-color: #079fc2;
         border: none;
-        margin-top: 25px;
+        margin-top: 20px;
     }
     .map__table {
         margin-top: 17px;
@@ -423,7 +398,10 @@
                 .map__table__price {
                     margin-bottom: 5px;
                     margin-top: 5px;
-                    margin-left: 70px;
+                    margin-left: 140px;
+                    .price {
+                        width: 100px;
+                    }
                 }
             }
         }
@@ -442,6 +420,92 @@
 .map__button button:hover {
     background-color: #1790ac;
     border-color: #214d4d;
+}
+
+.map {
+    border: 20px solid #ffffff;
+    .map-yandex {
+        position: absolute;
+        width: 100%;
+    }
+
+    @media (max-width: 768px){
+        .map-yandex {
+            position: static;
+        }
+    }
+    
+    .map-info {
+        width: 507px;
+        height: 373px;
+        background-color: #ffffff;
+        box-shadow: 0 11px 49px -35px rgba(0, 0, 0, 0.24);
+        margin-top: 61px;
+        position: absolute;
+        img {
+            float: left;
+            margin-right: 23px;
+        }
+        .map-info__question {
+            height: 21px;
+            font-size: 18px;
+            line-height: 27px;
+            color: #37373F;
+        }
+        .map-info__answer {
+            font-size: 18px;
+            line-height: 26px;
+            color: #37373F;
+        }
+        .map-info__photo {
+            width: 67px;
+            height: 67px;
+            margin-left: 30px;
+            .map-info__date {
+                margin-top: 50px;
+                .map-info__name {
+                    width: 300px;
+                    height: 22px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #37373F;
+                    margin-left: 90px;
+                    margin-top: 20px;
+                }
+                .map-info__prof {
+                    width: 85px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #37373F;
+                    margin-left: 90px;
+                    margin-top: 5px;
+                }
+                .map-info__addition {
+                    width: 279px;
+                    height: 22px;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 21px;
+                    color: #5286EC;
+                    margin-left: 90px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.map-info__placeholder {
+    height: 513px;
+    width: 100%;
 }
 
 .flats {
@@ -489,7 +553,7 @@
                             font-weight: 400;
                         }
                     }
-                    .flat__address {
+                    .flat__address span {
                         height: 17px;
                         color: #404853;
                         font-family: Roboto, regular;
@@ -553,4 +617,12 @@
 
 .flats-adv {
     margin-left: 180px;
+}
+
+.container {
+    width: 1137px;
+    padding-right: 7px;
+    padding-left: 7px;
+    margin-right: auto;
+    margin-left: auto;
 }
