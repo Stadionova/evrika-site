@@ -290,37 +290,66 @@
                 }
             }
         }
-        .button-search {
-            width: 190px;
-            padding: 0;
-            button {
-                width: 190px;
-                height: 48px;
-                box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
-                border-top-right-radius: 4px;
-                border-bottom-right-radius: 4px;
-                background-color: #079fc2;
-                border: none;
-                padding: 0px;
-                span {
-                    width: 45px;
-                    height: 17px;
-                    color: #ffffff;
-                    font-family: Roboto, medium;
-                    font-size: 13px;
-                    font-weight: 500;
-                    text-transform: uppercase;
-                }
-            }
-        }
+        // .button-search {
+        //     width: 190px;
+        //     padding: 0;
+        //     button {
+        //         width: 190px;
+        //         height: 48px;
+        //         box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
+        //         border-top-right-radius: 4px;
+        //         border-bottom-right-radius: 4px;
+        //         background-color: #079fc2;
+        //         border: none;
+        //         padding: 0px;
+        //         span {
+        //             width: 45px;
+        //             height: 17px;
+        //             color: #ffffff;
+        //             font-family: Roboto, medium;
+        //             font-size: 13px;
+        //             font-weight: 500;
+        //             text-transform: uppercase;
+        //         }
+        //     }
+        // }
     }
 }
 
+// .button-td {
+//     padding-left: 0px;
+// }
+
+.button-search {
+    width: 190px;
+    padding: 0;
+}
+
+.button-search button {
+    width: 190px;
+    height: 48px;
+    box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #079fc2;
+    border: none;
+    padding: 0px;
+}
+
+.button-search span {
+    width: 45px;
+    height: 17px;
+    color: #ffffff;
+    font-family: Roboto, medium;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
 // хувер на кнопке не работает
-.table-div {
-    .button-search:hover {
-        background-color: white;
-    }
+.button-search button:hover {
+    background-color: #1790ac;
+    border-color: #214d4d;
 }
 
 .map__arrow {
@@ -429,12 +458,15 @@
         width: 100%;
     }
 
+    // за счёт медиа делается мобильная вёрстка
+    // блок перескакивает ниже при уменьшении размера экрана
+    // не при уменьшении масштаба
     @media (max-width: 768px){
         .map-yandex {
             position: static;
         }
     }
-    
+
     .map-info {
         width: 507px;
         height: 373px;
@@ -503,22 +535,18 @@
     }
 }
 
-.map-info__placeholder {
-    height: 513px;
-    width: 100%;
-}
-
 .flats {
     margin: 0 auto;
     width: 1440px;
     height: 1849px;
     background-color: #f7f7f7;
-    margin-top: 20px;
+    margin-top: 500px;
     padding-top: 60px;
     .flat-desc {
         .flat-text {
             margin-bottom: 40px;
             display: flex;
+            padding-left: 200px;
             .flat-info {
                 height: 520px;
                 background-color: #ffffff;
@@ -615,8 +643,9 @@
     text-transform: uppercase;
 }
 
-.flats-adv {
-    margin-left: 180px;
+.flat__button button:hover {
+    background-color: #1790ac;
+    border-color: #214d4d;
 }
 
 .container {
@@ -625,4 +654,31 @@
     padding-left: 7px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.flats__button-all-flats {
+    margin-left: 657px;
+}
+
+.flats__button-all-flats button {
+    width: 279px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #74cfb7;
+    border: none;
+}
+
+.flats__button-all-flats span {
+    width: 127px;
+    height: 17px;
+    color: #ffffff;
+    font-family: "Roboto Medium";
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.flats__button-all-flats button:hover {
+    background-color: #1790ac;
+    border-color: #214d4d;
 }
