@@ -1,2 +1,2 @@
 import "./styles.less";
-// alert('hello!');
+import "normalize.css";
