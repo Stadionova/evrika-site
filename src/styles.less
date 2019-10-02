@@ -12,7 +12,12 @@
 //     z-index: 101;
 // }
 
+.navbar {
+    background-color: #f7f7f7;
+}
+
 .navbar__wrap {
+    width: 1180px;
     // для navbar нужно задать минимальную высоту
     min-height: 145px;
     // все элементы хэдера с логотипом выстроились в линию
@@ -20,12 +25,13 @@
     // всё это выравниваю относительно друг друга по центру
     align-items: center;
     // наш блок выделила красным цветом для наглядности
-    justify-content: space-between;
+    // justify-content: space-between;
     background-color: #f7f7f7;
+    margin: 0 auto;
     .navbar__logo {
         height: 149px;
         background-color: #74cfb7;
-        margin-left: 150px;
+        margin-right: 42px;
         .navbar__logo-inside {
             margin-left: 7px;
             margin-top: 14px;
@@ -35,7 +41,7 @@
         // делаю элемент блочным, чтобы он занимал всю строчку
         // и переносил следующий за ним блок на следующую строку
         height: 49px;
-        margin-right: 15px;
+        margin-right: 43px;
         .navbar__name {
             display: block;
             height: 24px;
@@ -80,7 +86,7 @@
             font-weight: 300;
         }
     }
-    .navbar__button {
+    .navbar__button button {
         color: #ffffff;
         font-family: Roboto;
         font-size: 14px;
@@ -90,7 +96,6 @@
         border-radius: 4px;
         background-color: #079fc2;
         border: none;
-        margin-right: 130px;
         width: 222px;
     }
 }
@@ -131,7 +136,7 @@
     height: 19px;
     background-color: #74cfb7;
     margin: 0 auto;
-    height: 10px;
+    height: 15px;
     img {
         height: 1px;
     }
@@ -755,12 +760,6 @@
     margin-left: auto;
 }
 
-// @media (max-width: 768px) {
-//             .map-yandex {
-//                 position: static;
-//             }
-//         }
-
 @media (min-width: 992px) and (max-width: 1199px) {
     .container-flats {
         max-width: 960px;
@@ -783,6 +782,9 @@
     }
     .navbar__number-timetable {
         display: none;
+    }
+    .navbar__wrap {
+        width: 451px;
     }
 }
 
