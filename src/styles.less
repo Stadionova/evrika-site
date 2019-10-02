@@ -755,6 +755,37 @@
     margin-left: auto;
 }
 
+// @media (max-width: 768px) {
+//             .map-yandex {
+//                 position: static;
+//             }
+//         }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container-flats {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-flats {
+        max-width: 750px;
+    }
+}
+
+// при таком размере экрана скрывать фото в объявлении
+@media (max-width: 991px) {
+    .flat__photo {
+        display: none;
+    }
+    .navbar__name-address {
+        display: none;
+    }
+    .navbar__number-timetable {
+        display: none;
+    }
+}
+
 .flats__button-all-flats {
     margin: 0 auto;
     width: 279px;
