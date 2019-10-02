@@ -2,6 +2,16 @@
     box-sizing: border-box; // это правило, которое позволяет правильно считать ширину
 }
 
+// чтобы навигационная панель при скроле не двигалась
+// но для данного сайта это не нужно
+// .navbar {
+//     position: fixed;
+//     left: 0;
+//     top: 0;
+//     width: 100%;
+//     z-index: 101;
+// }
+
 .navbar__wrap {
     // для navbar нужно задать минимальную высоту
     min-height: 145px;
@@ -343,8 +353,10 @@
             width: 12px;
             height: 14px;
             margin-right: 10px;
+            margin-top: 11px;
         }
         span {
+            display: block;
             width: 56px;
             height: 26px;
             color: #ffffff;
@@ -352,6 +364,8 @@
             font-size: 11px;
             font-weight: 400;
             line-height: 12px;
+            margin-left: 8px;
+            // margin-top: 7px;
         }
     }
     .hero__buttons-write {
@@ -364,8 +378,10 @@
         img {
             width: 16px;
             height: 15px;
+            margin-top: 11px;
         }
         span {
+            display: block;
             width: 60px;
             height: 26px;
             color: #ffffff;
@@ -373,6 +389,8 @@
             font-size: 11px;
             font-weight: 400;
             line-height: 12px;
+            margin-left: 8px;
+            // margin-top: 7px;
         }
     }
 }
