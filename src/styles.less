@@ -106,7 +106,7 @@
     height: 67px;
     padding-top: 26px;
     margin: 0 auto;
-    .menu__text {
+    .menu__text a {
         height: 17px;
         color: #404853;
         font-family: Roboto, medium;
@@ -114,6 +114,7 @@
         font-weight: 500;
         text-transform: uppercase;
         padding-right: 30px;
+        text-decoration: none;
         .search {
             width: 14px;
             height: 14px;
@@ -121,7 +122,7 @@
     }
 }
 
-.menu__text:hover {
+.menu__text a:hover {
     color: #74cfb7;
 }
 
@@ -354,8 +355,9 @@
             height: 14px;
             margin-right: 10px;
             margin-top: 11px;
+            background-color: #74cfb7;
         }
-        span {
+        span a {
             display: block;
             width: 56px;
             height: 26px;
@@ -365,7 +367,7 @@
             font-weight: 400;
             line-height: 12px;
             margin-left: 8px;
-            // margin-top: 7px;
+            text-decoration: none;
         }
     }
     .hero__buttons-write {
@@ -379,8 +381,9 @@
             width: 16px;
             height: 15px;
             margin-top: 11px;
+            background-color: #74cfb7;
         }
-        span {
+        span a {
             display: block;
             width: 60px;
             height: 26px;
@@ -390,8 +393,28 @@
             font-weight: 400;
             line-height: 12px;
             margin-left: 8px;
-            // margin-top: 7px;
+            text-decoration: none;
         }
+    }
+}
+
+// при наведении на кнопку фон меняется и у png картинок
+.hero__buttons-call:hover {
+    background-color: #079fc2;
+    border-color: #079fc2;
+    img {
+        background-color: #079fc2;
+        border-color: #079fc2;
+    }
+}
+
+// при наведении на кнопку фон меняется и у png картинок
+.hero__buttons-write:hover {
+    background-color: #079fc2;
+    border-color: #079fc2;
+    img {
+        background-color: #079fc2;
+        border-color: #079fc2;
     }
 }
 
