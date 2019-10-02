@@ -24,45 +24,48 @@
     <!-- navbar - это блок с навигацией -->
     <!-- hero - это блок с картинкой и заголовком -->
     <!-- header.header>.navbar+.hero|c -->
+
     <header class="header">
-        <div class="navbar">
-            <!-- div.container|c -->
-            <!-- создала контейнер в навигационной панели -->
-            <div class="container"></div>
-            <!-- в контейнере создаю навигационную панель в шапке страницы с логотипом и меню -->
-            <!-- navbar__wrap - это блок с логотипом -->
-            <div class="navbar__wrap">
-                <!-- создала обёртку для всего блока с логотипом и кнопками -->
-                <div class="navbar__logo">
-                    <div class="navbar__logo-inside">
-                        <img src="img/logo.png" alt="logo">
-                    </div>
+        <!-- div.container|c -->
+        <!-- создала контейнер в навигационной панели -->
+        <div class="container"></div>
+        <!-- в контейнере создаю навигационную панель в шапке страницы с логотипом и меню -->
+        <!-- navbar__wrap - это блок с логотипом -->
+        <div class="navbar__wrap">
+            <!-- создала обёртку для всего блока с логотипом и кнопками -->
+            <div class="navbar__logo">
+                <div class="navbar__logo-inside">
+                    <img src="img/logo.png" alt="logo">
                 </div>
-                <div class="navbar__name-address">
-                    <div class="navbar__name">
-                        <!-- использую тег span вместо тега p -->
-                        <span>Агентство недвижимости</span>
-                    </div>
-                    <div class="navbar__address">
-                        <img src="img/metro-yel.png" alt="metro">
-                        <span>Москва, «Беляево», ул. Миклухо-Маклая, д. 43</span>
-                    </div>
-                </div>
-                <div class="navbar__number-timetable">
-                    <div class="navbar__number">
-                        <span>+7 (495) 276-03-03</span>
-                    </div>
-                    <div class="navbar__timetable">
-                        <span>Пн—Пт: с 09.00 до 21.00, Сб—Вс: с 10.00 до 17.00</span>
-                    </div>
-                </div>
-                <div class="navbar__button"><button>Бесплатная консультация</button></div>
             </div>
-            <!-- /.container -->
+            <div class="navbar__name-address">
+                <div class="navbar__name">
+                    <!-- использую тег span вместо тега p -->
+                    <span>Агентство недвижимости</span>
+                </div>
+                <div class="navbar__address">
+                    <img src="img/metro-yel.png" alt="metro">
+                    <span>Москва, «Беляево», ул. Миклухо-Маклая, д. 43</span>
+                </div>
+            </div>
+            <div class="navbar__number-timetable">
+                <div class="navbar__number">
+                    <span>+7 (495) 276-03-03</span>
+                </div>
+                <div class="navbar__timetable">
+                    <span>Пн—Пт: с 09.00 до 21.00, Сб—Вс: с 10.00 до 17.00</span>
+                </div>
+            </div>
+            <div class="navbar__button"><button>Бесплатная консультация</button></div>
         </div>
+        <!-- /.container -->
         <!-- создаю контейнер с заданной шириной  -->
         <!-- /.navbar -->
         <!-- hero - это блок с главной фото в шапке -->
+    </header>
+    <!-- /.header -->
+
+    <div class="navbar">
         <div class="menu">
             <div class="menu__table">
                 <table>
@@ -84,22 +87,20 @@
                         </td>
                         <td>
                             <div class="menu__text">
-                                <div><span><a href="#">коммерческая недвижимость</a></span></div>
+                                <div><span><a href="#">коммерческая недвижимость</a></span>
+                                </div>
                             </div>
                         </td>
-                        <td>
                         <td>
                             <div class="menu__text">
                                 <div><span><a href="#">ипотека</a></span></div>
                             </div>
                         </td>
                         <td>
-                        <td>
                             <div class="menu__text">
                                 <div><span><a href="#">УСЛУГИ</a></span></div>
                             </div>
                         </td>
-                        <td>
                         <td>
                             <div class="menu__text">
                                 <div><span><a href="#">КОНТАКТЫ</a></span></div>
@@ -107,14 +108,16 @@
                         </td>
                         <td>
                             <div class="menu__text">
-                                <a class="search" href="#"><img src="img/search.png" alt="search"></a>
+                                <div><a class="search" href="#"><img src="img/search.png" alt="search"></a></div>
                             </div>
                         </td>
                     </tr>
                 </table>
+                <div class="line"></div>
             </div>
         </div>
-        <div class="line"><img src="img/line.png" alt="line"></div>
+        <!-- /.navbar -->
+
         <div class="hero">
             <h1 class="hero__title">Купить квартиру в новостройке</h1>
             <div class="hero__slider">
@@ -200,7 +203,7 @@
                 </div>
             </div>
         </div>
-        <!-- /.hero -->
+
         <div class="map">
             <div class="map-yandex">
                 <iframe src="https://yandex.ru/map-widget/v1/-/CCr5j1b" width="100%" height="509" frameborder="0"
@@ -283,6 +286,7 @@
                 <div class="map__arrow"><img src="img/map__round-arr.png" alt="arrow-button"></div>
             </div>
             <!-- /.map -->
+
             <div class="container-flats">
                 <div class="flats">
                     <div class="flats-adv">
@@ -295,7 +299,8 @@
                                             <img src="img/metro-green.png" alt="metro-map">
                                             <span>Марьина роща</span>
                                         </div>
-                                        <div class="flat__address"><span>Москва, ЮВАО, район Некрасовка, Люберецкие поля
+                                        <div class="flat__address"><span>Москва, ЮВАО, район Некрасовка, Люберецкие
+                                                поля
                                                 аэрации</span>
                                         </div>
                                         <div class="flat__table">
@@ -614,15 +619,18 @@
             </div>
         </div>
         <!-- /.flats -->
-    </header>
-    <!-- /.header -->
+    </div>
+    <!-- /.hero -->
+
     <footer class="footer">
         <div>
             <div class="footer__inside">
                 <div class="footer__inside-block">
                     <div class="footer__title"><span>Офис Миэль «В Беляево»</span></div>
-                    <div class="footer__info"><span>— это команда профессиональных экспертов и агентов по недвижимости с
-                            большим багажом риелторской и юридической практики. Основные направления Миэль «В Беляево» –
+                    <div class="footer__info"><span>— это команда профессиональных экспертов и агентов по
+                            недвижимости с
+                            большим багажом риелторской и юридической практики. Основные направления Миэль «В
+                            Беляево» –
                             это продажа элитной недвижимости и квартир в новостройках.</span></div>
                     <div class="footer__title-special"><span>Наши специалисты выполняют широкий спектр операций,
                             связанных с недвижимостью:</span>
@@ -658,8 +666,10 @@
                         <span>Если вы хотите купить квартиру в элитном жилом комплексе,
                             то мы поможем вам это сделать
                             не только максимально комфортно и безопасно, но и выгодно – мы всегда сообщаем о самых
-                            интересных акциях и выбираем действительно горячие предложения. Кроме того, мы готовы помочь
-                            оформить выгодную ипотеку. Каждый клиент становится для нас партнером, которого мы готовы
+                            интересных акциях и выбираем действительно горячие предложения. Кроме того, мы готовы
+                            помочь
+                            оформить выгодную ипотеку. Каждый клиент становится для нас партнером, которого мы
+                            готовы
                             защитить от всевозможных рисков и поддержать на всех этапах проведения сделки.
                         </span>
                     </div>
