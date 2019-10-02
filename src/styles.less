@@ -324,6 +324,55 @@
     border-color: #74cfb7;
 }
 
+.hero__buttons {
+    right: 0;
+    top: 0;
+    position: absolute;
+    margin-top: 300px;
+    .hero__buttons-call {
+        width: 70px;
+        height: 64px;
+        border-radius: 4px 0 0 4px;
+        background-color: #74cfb7;
+        text-align: center;
+        img {
+            width: 12px;
+            height: 14px;
+            margin-right: 10px;
+        }
+        span {
+            width: 56px;
+            height: 26px;
+            color: #ffffff;
+            font-family: Roboto;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 12px;
+        }
+    }
+    .hero__buttons-write {
+        width: 70px;
+        height: 64px;
+        border-radius: 4px 0 0 4px;
+        background-color: #74cfb7;
+        margin-top: 20px;
+        text-align: center;
+        img {
+            width: 16px;
+            height: 15px;
+        }
+        span {
+            width: 60px;
+            height: 26px;
+            color: #ffffff;
+            font-family: Roboto;
+            font-size: 11px;
+            font-weight: 400;
+            line-height: 12px;
+        }
+    }
+}
+
 .map__arrow {
     box-shadow: 0 11px 49px -35px rgba(0, 0, 0, 0.24);
     position: absolute;
@@ -536,7 +585,7 @@
                 margin-bottom: 52px;
                 display: flex;
                 .flat-info {
-                    width: 580px;
+                    // width: 580px;
                     height: 520px;
                     background-color: #ffffff;
                     .text-block-inside {
@@ -581,7 +630,7 @@
                         }
                         .flat__table {
                             margin-top: 17px;
-                            margin-right: 35px;
+                            margin-right: 53px;
                             table {
                                 border-collapse: collapse;
                                 tr td {
@@ -590,9 +639,6 @@
                                     font-family: Roboto, regular;
                                     font-size: 13px;
                                     font-weight: 400;
-                                    border-bottom-width: 2px;
-                                    border-bottom-style: solid;
-                                    border-bottom-color: #1f252d;
                                     .flat__table__price {
                                         margin-bottom: 5px;
                                         margin-top: 5px;
@@ -605,6 +651,15 @@
             }
         }
     }
+}
+
+.flat__table__filled {
+    border-left: 1px solid #e7e7e7;
+    padding-left: 26px;
+}
+
+.bottom-line {
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .flat__photo {
@@ -676,6 +731,32 @@
 .flats__button-all-flats button:hover {
     background-color: #079fc2;
     border-color: #079fc2;
+}
+
+.flat__stocks {
+    display: flex;
+    margin-top: 28px;
+}
+
+.flat__discounts {
+    width: 108px;
+    height: 36px;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+    img {
+        width: 15px;
+        height: 15px;
+        background-color: #079fc2;
+    }
+    span {
+        width: 74px;
+        height: 16px;
+        color: #079fc2;
+        font-family: Roboto, medium;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
 }
 
 .footer__inside {
