@@ -1075,13 +1075,15 @@ td a:hover {
         }
     }
     .footer__production {
-        width: 1440px;
+        width: 100%;
         background-color: #ffffff;
         margin: 0 auto;
         margin-top: 81px;
         margin-bottom: 87px;
         .footer__production-inside {
-            margin-left: 130px;
+            // margin-left: 130px;
+            width: 1180px;
+            margin: 0 auto;
             display: flex;
             .footer__year {
                 width: 613px;
@@ -1089,7 +1091,7 @@ td a:hover {
                 font-family: Roboto, light;
                 font-size: 14px;
                 font-weight: 300;
-                margin-right: 270px;
+                // margin-right: 270px;
                 span {
                     margin: 0;
                 }
@@ -1100,12 +1102,20 @@ td a:hover {
                 font-family: Roboto, light;
                 font-size: 14px;
                 font-weight: 300;
+                margin-right: 0;
+                margin-left: auto;
                 img {
                     width: 15px;
                     height: 17px;
                     margin-right: 13px;
                 }
             }        
-        }        
+        }
+        @media (max-width: 1180px){
+            .footer__production-inside {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
     }
 }
