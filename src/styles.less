@@ -134,6 +134,11 @@
     }
 }
 
+@media (max-width: 1200px){
+    .header {
+        width: 100%;
+    }
+}
 // /.navbar
 
 .navbar {
@@ -722,9 +727,6 @@ td a:hover {
 }
 
 // /.container
-.flat-text {
-    display: flex;
-}
 
 .container-flats {
     // width: 1440px;
@@ -747,7 +749,7 @@ td a:hover {
                 width: 1180px;
                 .flat-text {
                     margin-bottom: 52px;
-                    // display: flex;
+                    display: flex;
                     .flat-info {
                         background-color: #ffffff;
                         height: 520px;
@@ -917,6 +919,11 @@ td a:hover {
                         }
                     }
                 }
+                @media screen and (max-width: 991px) {
+                    .flat-text {
+                        display: block;
+                    }
+                }
             }
         }
     }
@@ -991,9 +998,9 @@ td a:hover {
     .header__wrap {
         width: 451px;
     }
-    .flat-text {
-        display: block;
-    }
+    // .flat-text {
+    //     display: block;
+    // }
 }
 
 // /.footer
