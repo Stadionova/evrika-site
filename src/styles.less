@@ -713,6 +713,7 @@ td a:hover {
         width: 13px;
         padding-top: 13px;
         padding-right: 23px;
+        outline: none;
     }
 }
 
@@ -721,6 +722,9 @@ td a:hover {
 }
 
 // /.container
+.flat-text {
+    display: flex;
+}
 
 .container-flats {
     // width: 1440px;
@@ -743,7 +747,7 @@ td a:hover {
                 width: 1180px;
                 .flat-text {
                     margin-bottom: 52px;
-                    display: flex;
+                    // display: flex;
                     .flat-info {
                         background-color: #ffffff;
                         height: 520px;
@@ -769,23 +773,22 @@ td a:hover {
                                 margin-right: 7px;
                             }
                             span {
-                                width: 91px;
+                                width: 98px;
                                 height: 17px;
-                                color: #404853;
-                                font-family: Roboto, regular;
-                                font-size: 13px;
+                                color: #1f252d;
+                                font-family: Roboto;
+                                font-size: 14px;
                                 font-weight: 400;
                             }
                         }
                         .flat__address {
                             span {
-                            height: 17px;
-                            color: #404853;
-                            font-family: Roboto, regular;
-                            font-size: 13px;
-                            font-weight: 400;
-                            margin-top: 9px;
-                            margin-bottom: 23px;
+                                width: 409px;
+                                height: 17px;
+                                color: #1f252d;
+                                font-family: Roboto;
+                                font-size: 14px;
+                                font-weight: 400;
                             }
                         }
                         .flat__table {
@@ -799,8 +802,16 @@ td a:hover {
                                     font-size: 13px;
                                     font-weight: 400;
                                     .flat__table__price {
-                                        margin-bottom: 5px;
-                                        margin-top: 5px;
+                                        padding-bottom: 5px;
+                                        // margin-top: 5px;
+                                        span {
+                                            width: 204px;
+                                            height: 48px;
+                                            color: #1f252d;
+                                            font-family: Roboto;
+                                            font-size: 14px;
+                                            font-weight: 400;
+                                        }
                                     }
                                 }
                             }
@@ -935,7 +946,11 @@ td a:hover {
         }
     }
 }
-                        
+
+.table__margin {
+    margin-top: 5px;
+}
+
 .flat__table__filled {
     border-left: 1px solid #e7e7e7;
     padding-left: 26px;
@@ -946,7 +961,8 @@ td a:hover {
 }
 
 .flat-text-desc {
-    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -964,7 +980,7 @@ td a:hover {
 // при таком размере экрана скрывать фото в объявлении
 @media screen and (max-width: 991px) {
     .flat__photo {
-        display: none;
+        // display: none;
     }
     .header__name-address {
         display: none;
@@ -975,9 +991,9 @@ td a:hover {
     .header__wrap {
         width: 451px;
     }
-    // .flat-text {
-    //     display: block;
-    // }
+    .flat-text {
+        display: block;
+    }
 }
 
 // /.footer
