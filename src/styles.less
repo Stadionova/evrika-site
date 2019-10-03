@@ -31,101 +31,113 @@
     margin-left: auto;
 }
 
-.header__wrap {
-    width: 1180px;
-    // для navbar нужно задать минимальную высоту
-    min-height: 145px;
-    // все элементы хэдера с логотипом выстроились в линию
-    display: flex;
-    // всё это выравниваю относительно друг друга по центру
-    align-items: center;
-    // наш блок выделила красным цветом для наглядности
-    // justify-content: space-between;
-    // background-color: #f7f7f7;
+.container__header {
+    background-color: #f7f7f7;
+    // margin: 0 auto;
+}
+
+.header {
+    background-color: #f7f7f7;
+    width: 1200px;
     margin: 0 auto;
-    .header__logo {
-        height: 149px;
-        background-color: #74cfb7;
-        margin-right: 42px;
-        .header__logo-inside {
-            margin-left: 7px;
-            margin-top: 14px;
+    .header__wrap {
+        // width: 1180px;
+        // для navbar нужно задать минимальную высоту
+        // min-height: 145px;
+        // все элементы хэдера с логотипом выстроились в линию
+        display: flex;
+        // всё это выравниваю относительно друг друга по центру
+        align-items: center;
+        // наш блок выделила красным цветом для наглядности
+        // justify-content: space-between;
+        // background-color: #f7f7f7;
+        // margin: 0 auto;
+        .header__logo {
+            height: 149px;
+            background-color: #74cfb7;
+            margin-right: 42px;
+            width: 187px;
+            .header__logo-inside {
+                padding-left: 7px;
+                padding-top: 14px;
+            }
         }
-    }
-    .header__name-address {
-        // делаю элемент блочным, чтобы он занимал всю строчку
-        // и переносил следующий за ним блок на следующую строку
-        height: 49px;
-        margin-right: 43px;
-        .header__name {
-            display: block;
-            height: 24px;
-            color: #1f252d;
-            font-family: Roboto, medium;
-            font-size: 20px;
-            font-weight: 500;
-            margin-bottom: 8px;
+        .header__name-address {
+            // делаю элемент блочным, чтобы он занимал всю строчку
+            // и переносил следующий за ним блок на следующую строку
+            height: 49px;
+            padding-right: 43px;
+            .header__name {
+                display: block;
+                height: 24px;
+                color: #1f252d;
+                font-family: Roboto, medium;
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+            .header__address {
+                display: block;
+                height: 17px;
+                color: #1f252d;
+                font-family: Roboto, light;
+                font-size: 14px;
+                font-weight: 300;
+                img {
+                    width: 17px;
+                    height: 12px;
+                    margin-right: 13px;
+                }
+            }
         }
-        .header__address {
-            display: block;
-            height: 17px;
-            color: #1f252d;
-            font-family: Roboto, light;
-            font-size: 14px;
-            font-weight: 300;
-            img {
-                width: 17px;
-                height: 12px;
-                margin-right: 13px;
+        .header__number-timetable {
+            height: 49px;
+            padding-right: 46px;
+            .header__number {
+                display: block;
+                height: 24px;
+                color: #1f252d;
+                font-family: Roboto, medium;
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+            .header__timetable {
+                display: block;
+                height: 17px;
+                color: #1f252d;
+                font-family: Roboto, light;
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+        .header__button {
+            button {
+                color: #ffffff;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 400;
+                height: 48px;
+                box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
+                border-radius: 4px;
+                background-color: #079fc2;
+                border: none;
+                width: 222px;
+            }
+            button:hover {
+                background-color: #74cfb7;
+                border-color: #74cfb7;
+                transition: 0.5s;
             }
         }
     }
-    .header__number-timetable {
-        height: 49px;
-        margin-right: 46px;
-        .header__number {
-            display: block;
-            height: 24px;
-            color: #1f252d;
-            font-family: Roboto, medium;
-            font-size: 20px;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-        .header__timetable {
-            display: block;
-            height: 17px;
-            color: #1f252d;
-            font-family: Roboto, light;
-            font-size: 14px;
-            font-weight: 300;
-        }
-    }
-    .header__button button {
-        color: #ffffff;
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: 400;
-        height: 48px;
-        box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
-        border-radius: 4px;
-        background-color: #079fc2;
-        border: none;
-        width: 222px;
-    }
-}
-
-.header__button button:hover {
-    background-color: #74cfb7;
-    border-color: #74cfb7;
 }
 
 // /.navbar
 
 .navbar {
-    background-color: #f7f7f7;
     .navbar__menu {
-        width: 1180px;
+        width: 1440px;
         height: 67px;
         padding-top: 26px;
         margin: 0 auto;
@@ -133,18 +145,21 @@
             padding-bottom: 5px;
             table {
                 margin-bottom: 10px;
-                .navbar__text a {
-                    height: 17px;
-                    color: #404853;
-                    font-family: Roboto, medium;
-                    font-size: 13px;
-                    font-weight: 500;
-                    text-transform: uppercase;
-                    padding-right: 30px;
-                    text-decoration: none;
-                }
-                .navbar__text a:hover {
-                    color: #74cfb7;
+                .navbar__text {
+                    margin-right: 40px;
+                    a {
+                        height: 17px;
+                        color: #404853;
+                        font-family: Roboto, medium;
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: #74cfb7;
+                        transition: 0.5s;
+                    }
                 }
             }
         }
@@ -303,6 +318,7 @@
     }
     .checker-label:hover .checker-input:not(:checked)~.checker-pseudo-input {
         border-color: #404853;
+        transition: 0.5s;
     }
     .checker-text {
         width: 159px;
@@ -356,6 +372,7 @@
                 button:hover {
                     background-color: #74cfb7;
                     border-color: #74cfb7;
+                    transition: 0.5s;
                 }           
             }
         }
@@ -397,9 +414,11 @@
     .hero__buttons-call:hover {
         background-color: #079fc2;
         border-color: #079fc2;
+        transition: 0.5s;
         img {
             background-color: #079fc2;
             border-color: #079fc2;
+            transition: 0.5s;
         }
     }
     .hero__buttons-write {
@@ -432,9 +451,11 @@
     .hero__buttons-write:hover {
         background-color: #079fc2;
         border-color: #079fc2;
+        transition: 0.5s;
         img {
             background-color: #079fc2;
             border-color: #079fc2;
+            transition: 0.5s;
         }
     }
 }
@@ -613,6 +634,7 @@
         .map__button button:hover {
             background-color: #74cfb7;
             border-color: #74cfb7;
+            transition: 0.5s;
         }
     }
     .cross button {
@@ -812,6 +834,7 @@
                             button:hover {
                                 background-color: #74cfb7;
                                 border-color: #74cfb7;
+                                transition: 0.5s;
                             }
                         }
                     }
@@ -841,6 +864,7 @@
         button:hover {
             background-color: #079fc2;
             border-color: #079fc2;
+            transition: 0.5s;
         }
     }
 }
@@ -852,6 +876,10 @@
 
 .bottom-line {
     border-bottom: 1px solid #e7e7e7;
+}
+
+.flat-text-desc {
+    padding: 20px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -867,7 +895,7 @@
 }
 
 // при таком размере экрана скрывать фото в объявлении
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
     .flat__photo {
         display: none;
     }
@@ -880,10 +908,9 @@
     .header__wrap {
         width: 451px;
     }
-}
-
-.flat-text-desc {
-    padding: 20px;
+    // .flat-text {
+    //     display: block;
+    // }
 }
 
 // /.footer

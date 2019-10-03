@@ -25,45 +25,46 @@
     <!-- hero - это блок с картинкой и заголовком -->
     <!-- header.header>.navbar+.hero|c -->
 
-    <header class="header">
-        <!-- div.container|c -->
-        <!-- создала контейнер в навигационной панели -->
-        <div class="container"></div>
-        <!-- в контейнере создаю навигационную панель в шапке страницы с логотипом и меню -->
-        <!-- navbar__wrap - это блок с логотипом -->
-        <div class="header__wrap">
-            <!-- создала обёртку для всего блока с логотипом и кнопками -->
-            <div class="header__logo">
-                <div class="header__logo-inside">
-                    <img src="img/logo.png" alt="logo">
+    <div class="container__header">
+        <header class="header">
+            <!-- div.container|c -->
+            <!-- создала контейнер в навигационной панели -->
+            <!-- в контейнере создаю навигационную панель в шапке страницы с логотипом и меню -->
+            <!-- navbar__wrap - это блок с логотипом -->
+            <div class="header__wrap">
+                <!-- создала обёртку для всего блока с логотипом и кнопками -->
+                <div class="header__logo">
+                    <div class="header__logo-inside">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
                 </div>
+                <div class="header__name-address">
+                    <div class="header__name">
+                        <!-- использую тег span вместо тега p -->
+                        <span>Агентство недвижимости</span>
+                    </div>
+                    <div class="header__address">
+                        <img src="img/metro-yel.png" alt="metro">
+                        <span>Москва, «Беляево», ул. Миклухо-Маклая, д. 43</span>
+                    </div>
+                </div>
+                <div class="header__number-timetable">
+                    <div class="header__number">
+                        <span>+7 (495) 276-03-03</span>
+                    </div>
+                    <div class="header__timetable">
+                        <span>Пн—Пт: с 09.00 до 21.00, Сб—Вс: с 10.00 до 17.00</span>
+                    </div>
+                </div>
+                <div class="header__button"><button>Бесплатная консультация</button></div>
             </div>
-            <div class="header__name-address">
-                <div class="header__name">
-                    <!-- использую тег span вместо тега p -->
-                    <span>Агентство недвижимости</span>
-                </div>
-                <div class="header__address">
-                    <img src="img/metro-yel.png" alt="metro">
-                    <span>Москва, «Беляево», ул. Миклухо-Маклая, д. 43</span>
-                </div>
-            </div>
-            <div class="header__number-timetable">
-                <div class="header__number">
-                    <span>+7 (495) 276-03-03</span>
-                </div>
-                <div class="header__timetable">
-                    <span>Пн—Пт: с 09.00 до 21.00, Сб—Вс: с 10.00 до 17.00</span>
-                </div>
-            </div>
-            <div class="header__button"><button>Бесплатная консультация</button></div>
-        </div>
-        <!-- /.container -->
-        <!-- создаю контейнер с заданной шириной  -->
-        <!-- /.navbar -->
-        <!-- hero - это блок с главной фото в шапке -->
-    </header>
-    <!-- /.header -->
+            <!-- /.container -->
+            <!-- создаю контейнер с заданной шириной  -->
+            <!-- /.navbar -->
+            <!-- hero - это блок с главной фото в шапке -->
+        </header>
+        <!-- /.header -->
+    </div>
 
     <div class="navbar">
         <div class="navbar__menu">
@@ -116,512 +117,511 @@
             </div>
             <div class="line"></div>
         </div>
-        <!-- /.navbar -->
+    </div>
+    <!-- /.navbar -->
 
-        <!-- /.hero -->
-        <div class="hero">
-            <h1 class="hero__title">Купить квартиру в новостройке</h1>
-            <div class="hero__slider">
-                <div>
-                    <div class="hero__slider__name">
-                        <span>Стоимость, млн руб.</span>
-                    </div>
-                    <div class="hero__slider__line">
-                        <input type="range" min="1" max="100" step="any" class="slider slider-left" id="myRange">
-                        <input type="range" min="1" max="100" step="any" class="slider slider-right" id="myRange">
-                        <div class="check-box">
-                            <div><label class="checker-label checker-size first" for="sone-id">
-                                    <input class="checker-input checker-active-color" hidden id="sone-id"
-                                        type="checkbox">
-                                    <span class="checker-pseudo-input checker-color"></span>
-                                    <span class="checker-text">Москва и Новая Москва</span>
-                                </label>
-                            </div>
-                            <div>
-                                <label class="checker-label checker-size second" for="sone-id">
-                                    <input class="checker-input checker-active-color" hidden id="sone-id"
-                                        type="checkbox">
-                                    <span class="checker-pseudo-input checker-color"></span>
-                                    <span class="checker-text">Московская область</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="hero__scroll__bar-block"></div>
-                        <div class="hero__scroll__address"></div>
-                        <div class="hero__scroll__address"></div>
-                    </div>
+    <!-- /.hero -->
+    <div class="hero">
+        <h1 class="hero__title">Купить квартиру в новостройке</h1>
+        <div class="hero__slider">
+            <div>
+                <div class="hero__slider__name">
+                    <span>Стоимость, млн руб.</span>
                 </div>
-                <div class="table-div">
-                    <table>
-                        <tr>
-                            <td>
-                                <div class="text-arrow">
-                                    <div><span>Станция метро</span></div>
-                                    <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="text-arrow">
-                                    <div><span>Тип жилья</span></div>
-                                    <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="text-arrow">
-                                    <div><span>Площадь</span></div>
-                                    <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="text-arrow">
-                                    <div><span>Тип отделки</span></div>
-                                    <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="text-arrow">
-                                    <div><span>Срок сдачи</span></div>
-                                    <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
-                                </div>
-                            </td>
-                            <td class="button-td" style="padding-left: 0px">
-                                <div class="button-search">
-                                    <button><span>Найти</span></button>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
+                <div class="hero__slider__line">
+                    <input type="range" min="1" max="100" step="any" class="slider slider-left" id="myRange">
+                    <input type="range" min="1" max="100" step="any" class="slider slider-right" id="myRange">
+                    <div class="check-box">
+                        <div><label class="checker-label checker-size first" for="sone-id">
+                                <input class="checker-input checker-active-color" hidden id="sone-id" type="checkbox">
+                                <span class="checker-pseudo-input checker-color"></span>
+                                <span class="checker-text">Москва и Новая Москва</span>
+                            </label>
+                        </div>
+                        <div>
+                            <label class="checker-label checker-size second" for="sone-id">
+                                <input class="checker-input checker-active-color" hidden id="sone-id" type="checkbox">
+                                <span class="checker-pseudo-input checker-color"></span>
+                                <span class="checker-text">Московская область</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="hero__scroll__bar-block"></div>
+                    <div class="hero__scroll__address"></div>
+                    <div class="hero__scroll__address"></div>
                 </div>
             </div>
-            <div class="hero__buttons">
-                <div class="hero__buttons-call">
-                    <img src="/img/phone-icon.png" alt="phone">
-                    <span><a href="#">Обратный звонок</a></span>
-                </div>
-                <div class="hero__buttons-write">
-                    <img src="img/schedule.png" alt="shedule">
-                    <span><a href="#">Записаться на показ</a></span>
-                </div>
+            <div class="table-div">
+                <table>
+                    <tr>
+                        <td>
+                            <div class="text-arrow">
+                                <div><span>Станция метро</span></div>
+                                <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="text-arrow">
+                                <div><span>Тип жилья</span></div>
+                                <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="text-arrow">
+                                <div><span>Площадь</span></div>
+                                <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="text-arrow">
+                                <div><span>Тип отделки</span></div>
+                                <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="text-arrow">
+                                <div><span>Срок сдачи</span></div>
+                                <div class="arrow"><img src="img/arrow.png" alt="arrow"></div>
+                            </div>
+                        </td>
+                        <td class="button-td" style="padding-left: 0px">
+                            <div class="button-search">
+                                <button><span>Найти</span></button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
             </div>
         </div>
+        <div class="hero__buttons">
+            <div class="hero__buttons-call">
+                <img src="/img/phone-icon.png" alt="phone">
+                <span><a href="#">Обратный звонок</a></span>
+            </div>
+            <div class="hero__buttons-write">
+                <img src="img/schedule.png" alt="shedule">
+                <span><a href="#">Записаться на показ</a></span>
+            </div>
+        </div>
+    </div>
 
+    <!-- /.map -->
+    <div class="map">
+        <div class="map-yandex">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCr5j1b" width="100%" height="509" frameborder="0"
+                style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <div class="container">
+            <div id="mapInfo" class="map-info">
+                <div class="map__photo-house"><img src="img/photo-house__map.png" alt="house"></div>
+                <div class="map__text">
+                    <div class="map__title"><span>ЖК Премиум-квартал JAZZ</span></div>
+                    <div class="map__metro">
+                        <img src="img/metro-green.png" alt="metro-map">
+                        <span>Марьина роща</span>
+                    </div>
+                    <div class="map__address"><span>Марьина роща, ул. Сущевский вал, 49</span></div>
+                    <div class="map__table">
+                        <table>
+                            <tr>
+                                <td></td>
+                                <td class="bottom-line-map">
+                                    <div class="map__table__price">
+                                        <div><span>6 900 000 р.</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="bottom-line-map">
+                                    <div class="map__table__price">
+                                        <div class="price"><span>от 22 900 000 р.</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="bottom-line-map">
+                                    <div class="map__table__price">
+                                        <div><span>от 17 400 000 р.</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td class="bottom-line-map">
+                                    <div class="map__table__price">
+                                        <div><span>от 63 200 000 р.</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="map__table__price">
+                                        <div><span>На заселении</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="map__table__price">
+                                        <div><span>Есть</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <div class="map__table__price">
+                                        <div><span>Возможна</span></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="map__button"><button><span>Заказать просмотр</span></button></div>
+                </div>
+                <div class="cross"><button id="cross"><img src="img/close_icon.png" alt="cross"></button></div>
+            </div>
+            <div class="map__arrow"><img src="img/map__round-arr.png" alt="arrow-button"></div>
+        </div>
         <!-- /.map -->
-        <div class="map">
-            <div class="map-yandex">
-                <iframe src="https://yandex.ru/map-widget/v1/-/CCr5j1b" width="100%" height="509" frameborder="0"
-                    style="border:0;" allowfullscreen=""></iframe>
-            </div>
-            <div class="container">
-                <div id="mapInfo" class="map-info">
-                    <div class="map__photo-house"><img src="img/photo-house__map.png" alt="house"></div>
-                    <div class="map__text">
-                        <div class="map__title"><span>ЖК Премиум-квартал JAZZ</span></div>
-                        <div class="map__metro">
-                            <img src="img/metro-green.png" alt="metro-map">
-                            <span>Марьина роща</span>
-                        </div>
-                        <div class="map__address"><span>Марьина роща, ул. Сущевский вал, 49</span></div>
-                        <div class="map__table">
-                            <table>
-                                <tr>
-                                    <td></td>
-                                    <td class="bottom-line-map">
-                                        <div class="map__table__price">
-                                            <div><span>6 900 000 р.</span></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="bottom-line-map">
-                                        <div class="map__table__price">
-                                            <div class="price"><span>от 22 900 000 р.</span></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="bottom-line-map">
-                                        <div class="map__table__price">
-                                            <div><span>от 17 400 000 р.</span></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td class="bottom-line-map">
-                                        <div class="map__table__price">
-                                            <div><span>от 63 200 000 р.</span></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>
-                                        <div class="map__table__price">
-                                            <div><span>На заселении</span></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>
-                                        <div class="map__table__price">
-                                            <div><span>Есть</span></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td>
-                                        <div class="map__table__price">
-                                            <div><span>Возможна</span></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="map__button"><button><span>Заказать просмотр</span></button></div>
-                    </div>
-                    <div class="cross"><button id="cross"><img src="img/close_icon.png" alt="cross"></button></div>
-                </div>
-                <div class="map__arrow"><img src="img/map__round-arr.png" alt="arrow-button"></div>
-            </div>
-            <!-- /.map -->
 
-            <!-- /.container -->
-            <div class="container-flats">
-                <div class="flats">
-                    <div class="flats-adv">
-                        <div class="flat-desc">
-                            <div class="flat-text">
-                                <div class="flat-info">
-                                    <div class="text-block-inside">
-                                        <div class="flat__title"><span>Микрорайон Некрасовка</span></div>
-                                        <div class="flat__metro">
-                                            <img src="img/metro-green.png" alt="metro-map">
-                                            <span>Марьина роща</span>
-                                        </div>
-                                        <div class="flat__address"><span>Москва, ЮВАО, район Некрасовка, Люберецкие
-                                                поля
-                                                аэрации</span>
-                                        </div>
-                                        <div class="flat__table">
-                                            <table>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>6 900 000 р.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>от 22 900 000 р.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>от 17 400 000 р.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>от 63 200 000 р.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line flat-text-desc">
-                                                        <div class="flat__table__price">
-                                                            <div><span>Монтаж завершен. Ввод дома в эксплуатацию в 4
-                                                                    квартале
-                                                                    2019
-                                                                    года
-                                                                    / На заселении.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>Есть</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="flat__table__filled">
-                                                        <div class="flat__table__price">
-                                                            <div><span>Возможна</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <div class="flat__stocks">
-                                                <div class="flat__discounts">
-                                                    <img src="img/mortgage.png" alt="ипотека">
-                                                    <span>Ипотека</span>
-                                                </div>
-                                                <div class="flat__discounts">
-                                                    <img src="img/shedule-icon.png" alt="рассрочка">
-                                                    <span>Рассрочка</span>
-                                                </div>
-                                                <div class="flat__discounts">
-                                                    <img src="img/discounts.png" alt="скидки">
-                                                    <span>Скидки</span>
-                                                </div>
-                                                <div class="flat__discounts">
-                                                    <img src="img/subsidies.png" alt="субсидии">
-                                                    <span>субсидии</span>
-                                                </div>
+        <!-- /.container -->
+        <div class="container-flats">
+            <div class="flats">
+                <div class="flats-adv">
+                    <div class="flat-desc">
+                        <div class="flat-text">
+                            <div class="flat-info">
+                                <div class="text-block-inside">
+                                    <div class="flat__title"><span>Микрорайон Некрасовка</span></div>
+                                    <div class="flat__metro">
+                                        <img src="img/metro-green.png" alt="metro-map">
+                                        <span>Марьина роща</span>
+                                    </div>
+                                    <div class="flat__address"><span>Москва, ЮВАО, район Некрасовка, Люберецкие
+                                            поля
+                                            аэрации</span>
+                                    </div>
+                                    <div class="flat__table">
+                                        <table>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>6 900 000 р.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>от 22 900 000 р.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>от 17 400 000 р.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>от 63 200 000 р.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line flat-text-desc">
+                                                    <div class="flat__table__price">
+                                                        <div><span>Монтаж завершен. Ввод дома в эксплуатацию в 4
+                                                                квартале
+                                                                2019
+                                                                года
+                                                                / На заселении.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>Есть</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="flat__table__filled">
+                                                    <div class="flat__table__price">
+                                                        <div><span>Возможна</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="flat__stocks">
+                                            <div class="flat__discounts">
+                                                <img src="img/mortgage.png" alt="ипотека">
+                                                <span>Ипотека</span>
+                                            </div>
+                                            <div class="flat__discounts">
+                                                <img src="img/shedule-icon.png" alt="рассрочка">
+                                                <span>Рассрочка</span>
+                                            </div>
+                                            <div class="flat__discounts">
+                                                <img src="img/discounts.png" alt="скидки">
+                                                <span>Скидки</span>
+                                            </div>
+                                            <div class="flat__discounts">
+                                                <img src="img/subsidies.png" alt="субсидии">
+                                                <span>субсидии</span>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="flat__photo">
-                                    <div class="flat__photo-img">
-                                        <img src="img/house_1.png" alt="house">
-                                    </div>
-                                    <div class="gifts">
-                                        <div class="gifts-inside">
-                                            <div class="gift-text"><img src="img/gift.png" alt="gift">
-                                                <span>Подарочные сертификаты</span></div>
-                                            <div class="gift-shout"><img src="img/shout.png" alt="shout">
-                                                <span>Акция</span></div>
-                                        </div>
-                                    </div>
-                                    <div class="flat__button">
-                                        <button><span>Подробнее</span></button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="flat-text">
-                                <div class="flat-info">
-                                    <div class="text-block-inside">
-                                        <div class="flat__title"><span>ДОМ «Флагман»</span></div>
-                                        <div class="flat__metro">
-                                            <img src="img/metro-grey.png" alt="metro-map">
-                                            <span>Выхино</span>
-                                        </div>
-                                        <div class="flat__address"><span>Московская область, г. Долгопрудный, ул.
-                                                Набережная</span>
-                                        </div>
-                                        <div class="flat__table">
-                                            <table>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>от 3 239 397 р.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>от 4 734 000 р.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>от 6 512 440 р.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line flat-text-desc">
-                                                        <div class="flat__table__price">
-                                                            <div><span>Введен в эксплуатацию / На заселении.</span>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>Есть</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="flat__table__filled">
-                                                        <div class="flat__table__price">
-                                                            <div><span>Возможна</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <div class="flat__stocks">
-                                                <div class="flat__discounts">
-                                                    <img src="img/mortgage.png" alt="ипотека">
-                                                    <span>Ипотека</span>
-                                                </div>
-                                                <div class="flat__discounts">
-                                                    <img src="img/shedule-icon.png" alt="рассрочка">
-                                                    <span>Рассрочка</span>
-                                                </div>
-                                                <div class="flat__discounts">
-                                                    <img src="img/discounts.png" alt="скидки">
-                                                    <span>Скидки</span>
-                                                </div>
-                                                <div class="flat__discounts">
-                                                    <img src="img/subsidies.png" alt="субсидии">
-                                                    <span>субсидии</span>
-                                                </div>
-                                            </div>
-                                        </div>
+                            <div class="flat__photo">
+                                <div class="flat__photo-img">
+                                    <img src="img/house_1.png" alt="house">
+                                </div>
+                                <div class="gifts">
+                                    <div class="gifts-inside">
+                                        <div class="gift-text"><img src="img/gift.png" alt="gift">
+                                            <span>Подарочные сертификаты</span></div>
+                                        <div class="gift-shout"><img src="img/shout.png" alt="shout">
+                                            <span>Акция</span></div>
                                     </div>
                                 </div>
-                                <div class="flat__photo">
-                                    <div class="flat__photo-img"><img src="img/house_2.png" alt="house"></div>
-                                    <div class="gifts">
-                                        <div class="gifts-inside">
-                                            <div class="gift-text"><img src="img/gift.png" alt="gift">
-                                                <span>Подарочные сертификаты</span>
-                                            </div>
-                                            <div class="gift-shout"><img src="img/shout.png" alt="shout">
-                                                <span>Акция</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flat__button"><button><span>Подробнее</span></button></div>
+                                <div class="flat__button">
+                                    <button><span>Подробнее</span></button>
                                 </div>
                             </div>
-                            <div class="flat-text">
-                                <div class="flat-info">
-                                    <div class="text-block-inside">
-                                        <div class="flat__title"><span>ЖК «Лайково»</span></div>
-                                        <div class="flat__metro">
-                                            <img src="img/metro-blue.png" alt="metro-map">
-                                            <span>Ховрино</span>
-                                        </div>
-                                        <div class="flat__address"><span>Московская область, г. Долгопрудный, ул.
-                                                Дирижабельная</span>
-                                        </div>
-                                        <div class="flat__table">
-                                            <table>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>6 900 000 р.</span></div>
+                        </div>
+                        <div class="flat-text">
+                            <div class="flat-info">
+                                <div class="text-block-inside">
+                                    <div class="flat__title"><span>ДОМ «Флагман»</span></div>
+                                    <div class="flat__metro">
+                                        <img src="img/metro-grey.png" alt="metro-map">
+                                        <span>Выхино</span>
+                                    </div>
+                                    <div class="flat__address"><span>Московская область, г. Долгопрудный, ул.
+                                            Набережная</span>
+                                    </div>
+                                    <div class="flat__table">
+                                        <table>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>от 3 239 397 р.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>от 4 734 000 р.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>от 6 512 440 р.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line flat-text-desc">
+                                                    <div class="flat__table__price">
+                                                        <div><span>Введен в эксплуатацию / На заселении.</span>
                                                         </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>от 22 900 000 р.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>от 17 400 000 р.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>от 63 200 000 р.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line flat-text-desc">
-                                                        <div class="flat__table__price">
-                                                            <div><span>Монтаж завершен. Ввод дома в эксплуатацию в 4
-                                                                    квартале 2019
-                                                                    года
-                                                                    / На заселении.</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="bottom-line"></td>
-                                                    <td class="flat__table__filled bottom-line">
-                                                        <div class="flat__table__price">
-                                                            <div><span>Есть</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td class="flat__table__filled">
-                                                        <div class="flat__table__price">
-                                                            <div><span>Возможна</span></div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                            <div class="flat__stocks">
-                                                <div class="flat__discounts">
-                                                    <img src="img/mortgage.png" alt="ипотека">
-                                                    <span>Ипотека</span>
-                                                </div>
-                                                <div class="flat__discounts">
-                                                    <img src="img/shedule-icon.png" alt="рассрочка">
-                                                    <span>Рассрочка</span>
-                                                </div>
-                                                <div class="flat__discounts">
-                                                    <img src="img/discounts.png" alt="скидки">
-                                                    <span>Скидки</span>
-                                                </div>
-                                                <div class="flat__discounts">
-                                                    <img src="img/subsidies.png" alt="субсидии">
-                                                    <span>субсидии</span>
-                                                </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>Есть</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="flat__table__filled">
+                                                    <div class="flat__table__price">
+                                                        <div><span>Возможна</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="flat__stocks">
+                                            <div class="flat__discounts">
+                                                <img src="img/mortgage.png" alt="ипотека">
+                                                <span>Ипотека</span>
+                                            </div>
+                                            <div class="flat__discounts">
+                                                <img src="img/shedule-icon.png" alt="рассрочка">
+                                                <span>Рассрочка</span>
+                                            </div>
+                                            <div class="flat__discounts">
+                                                <img src="img/discounts.png" alt="скидки">
+                                                <span>Скидки</span>
+                                            </div>
+                                            <div class="flat__discounts">
+                                                <img src="img/subsidies.png" alt="субсидии">
+                                                <span>субсидии</span>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="flat__photo">
-                                    <div class="flat__photo-img"><img src="img/house_3.png" alt="house"></div>
-                                    <div class="gifts">
-                                        <div class="gifts-inside">
-                                            <div class="gift-text"><img src="img/gift.png" alt="gift">
-                                                <span>Подарочные сертификаты</span></div>
-                                            <div class="gift-shout"><img src="img/shout.png" alt="shout">
-                                                <span>Акция</span></div>
+                            </div>
+                            <div class="flat__photo">
+                                <div class="flat__photo-img"><img src="img/house_2.png" alt="house"></div>
+                                <div class="gifts">
+                                    <div class="gifts-inside">
+                                        <div class="gift-text"><img src="img/gift.png" alt="gift">
+                                            <span>Подарочные сертификаты</span>
+                                        </div>
+                                        <div class="gift-shout"><img src="img/shout.png" alt="shout">
+                                            <span>Акция</span>
                                         </div>
                                     </div>
-                                    <div class="flat__button"><button><span>Подробнее</span></button></div>
                                 </div>
+                                <div class="flat__button"><button><span>Подробнее</span></button></div>
+                            </div>
+                        </div>
+                        <div class="flat-text">
+                            <div class="flat-info">
+                                <div class="text-block-inside">
+                                    <div class="flat__title"><span>ЖК «Лайково»</span></div>
+                                    <div class="flat__metro">
+                                        <img src="img/metro-blue.png" alt="metro-map">
+                                        <span>Ховрино</span>
+                                    </div>
+                                    <div class="flat__address"><span>Московская область, г. Долгопрудный, ул.
+                                            Дирижабельная</span>
+                                    </div>
+                                    <div class="flat__table">
+                                        <table>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>6 900 000 р.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>от 22 900 000 р.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>от 17 400 000 р.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>от 63 200 000 р.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line flat-text-desc">
+                                                    <div class="flat__table__price">
+                                                        <div><span>Монтаж завершен. Ввод дома в эксплуатацию в 4
+                                                                квартале 2019
+                                                                года
+                                                                / На заселении.</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="bottom-line"></td>
+                                                <td class="flat__table__filled bottom-line">
+                                                    <div class="flat__table__price">
+                                                        <div><span>Есть</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td class="flat__table__filled">
+                                                    <div class="flat__table__price">
+                                                        <div><span>Возможна</span></div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <div class="flat__stocks">
+                                            <div class="flat__discounts">
+                                                <img src="img/mortgage.png" alt="ипотека">
+                                                <span>Ипотека</span>
+                                            </div>
+                                            <div class="flat__discounts">
+                                                <img src="img/shedule-icon.png" alt="рассрочка">
+                                                <span>Рассрочка</span>
+                                            </div>
+                                            <div class="flat__discounts">
+                                                <img src="img/discounts.png" alt="скидки">
+                                                <span>Скидки</span>
+                                            </div>
+                                            <div class="flat__discounts">
+                                                <img src="img/subsidies.png" alt="субсидии">
+                                                <span>субсидии</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flat__photo">
+                                <div class="flat__photo-img"><img src="img/house_3.png" alt="house"></div>
+                                <div class="gifts">
+                                    <div class="gifts-inside">
+                                        <div class="gift-text"><img src="img/gift.png" alt="gift">
+                                            <span>Подарочные сертификаты</span></div>
+                                        <div class="gift-shout"><img src="img/shout.png" alt="shout">
+                                            <span>Акция</span></div>
+                                    </div>
+                                </div>
+                                <div class="flat__button"><button><span>Подробнее</span></button></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flats__button-all-flats">
-                    <button><span>Все предложения</span></button>
-                </div>
+            </div>
+            <div class="flats__button-all-flats">
+                <button><span>Все предложения</span></button>
             </div>
         </div>
-        <!-- /.flats -->
+    </div>
+    <!-- /.flats -->
     </div>
     <!-- /.hero -->
 
