@@ -1,150 +1,108 @@
 * {
-    box-sizing: border-box; // это правило, которое позволяет правильно считать ширину
+    box-sizing: border-box; 
 }
-
-// чтобы навигационная панель при скроле не двигалась
-// но для данного сайта это не нужно
-// .navbar {
-//     position: fixed;
-//     left: 0;
-//     top: 0;
-//     width: 100%;
-//     z-index: 101;
-// }
-
-// за счёт медиа делается мобильная вёрстка
-    // блок перескакивает ниже при уменьшении размера экрана
-    // не при уменьшении масштаба
-    // @media (max-width: 768px){
-    //     .map-yandex {
-    //         position: static;
-    //     }
-    // }
 
 // /.header
 
-.container {
-    width: 1137px;
-    padding-right: 7px;
-    padding-left: 7px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.container__header {
+.header__container {
     background-color: #f7f7f7;
-    // width: 1440px;
     margin: auto;
-}
-
-.header {
-    background-color: #f7f7f7;
-    width: 1200px;
-    margin: 0 auto;
-    .header__wrap {
-        // width: 1180px;
-        // для navbar нужно задать минимальную высоту
-        // min-height: 145px;
-        // все элементы хэдера с логотипом выстроились в линию
-        display: flex;
-        // всё это выравниваю относительно друг друга по центру
-        align-items: center;
-        // наш блок выделила красным цветом для наглядности
-        // justify-content: space-between;
-        // background-color: #f7f7f7;
-        // margin: 0 auto;
-        .header__logo {
-            height: 149px;
-            background-color: #74cfb7;
-            margin-right: 42px;
-            width: 187px;
-            .header__logo-inside {
-                padding-left: 7px;
-                padding-top: 14px;
-            }
+    .header {
+        background-color: #f7f7f7;
+        width: 1200px;
+        margin: 0 auto;
+        @media (max-width: 1200px) {
+            width: 100%;
         }
-        .header__name-address {
-            // делаю элемент блочным, чтобы он занимал всю строчку
-            // и переносил следующий за ним блок на следующую строку
-            height: 49px;
-            padding-right: 43px;
-            @media (max-width: 1000px) {
-                display: none;
+        .header__wrap {
+            display: flex;
+            align-items: center;
+            .header__logo {
+                height: 149px;
+                background-color: #74cfb7;
+                margin-right: 42px;
+                width: 187px;
+                .header__logo-inside {
+                    padding-left: 7px;
+                    padding-top: 14px;
+                }
             }
-            .header__name {
-                display: block;
-                height: 24px;
-                color: #1f252d;
-                font-family: Roboto, medium;
-                font-size: 20px;
-                font-weight: 500;
-                margin-bottom: 8px;
+            .header__name-address {
+                height: 49px;
+                padding-right: 43px;
+                @media (max-width: 1000px) {
+                    display: none;
+                }
+                .header__name {
+                    display: block;
+                    height: 24px;
+                    color: #1f252d;
+                    font-family: Roboto, medium;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                }
+                .header__address {
+                    display: block;
+                    height: 17px;
+                    color: #1f252d;
+                    font-family: Roboto, light;
+                    font-size: 14px;
+                    font-weight: 300;
+                    img {
+                        width: 17px;
+                        height: 12px;
+                        margin-right: 13px;
+                    }
+                }
             }
-            .header__address {
-                display: block;
-                height: 17px;
-                color: #1f252d;
-                font-family: Roboto, light;
-                font-size: 14px;
-                font-weight: 300;
-                img {
-                    width: 17px;
-                    height: 12px;
-                    margin-right: 13px;
+            .header__number-timetable {
+                height: 49px;
+                padding-right: 46px;
+                @media (max-width: 715px) {
+                    display: none;
+                }
+                .header__number {
+                    display: block;
+                    height: 24px;
+                    color: #1f252d;
+                    font-family: Roboto, medium;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                }
+                .header__timetable {
+                    display: block;
+                    height: 17px;
+                    color: #1f252d;
+                    font-family: Roboto, light;
+                    font-size: 14px;
+                    font-weight: 300;
+                }
+            }
+            .header__button {
+                button {
+                    color: #ffffff;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    font-weight: 400;
+                    height: 48px;
+                    box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
+                    border-radius: 4px;
+                    background-color: #079fc2;
+                    border: none;
+                    width: 222px;
+                }
+                button:hover {
+                    background-color: #74cfb7;
+                    border-color: #74cfb7;
+                    transition: 0.3s;
                 }
             }
         }
-        .header__number-timetable {
-            height: 49px;
-            padding-right: 46px;
-            @media (max-width: 715px) {
-                display: none;
-            }
-            .header__number {
-                display: block;
-                height: 24px;
-                color: #1f252d;
-                font-family: Roboto, medium;
-                font-size: 20px;
-                font-weight: 500;
-                margin-bottom: 8px;
-            }
-            .header__timetable {
-                display: block;
-                height: 17px;
-                color: #1f252d;
-                font-family: Roboto, light;
-                font-size: 14px;
-                font-weight: 300;
-            }
-        }
-        .header__button {
-            button {
-                color: #ffffff;
-                font-family: Roboto;
-                font-size: 14px;
-                font-weight: 400;
-                height: 48px;
-                box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
-                border-radius: 4px;
-                background-color: #079fc2;
-                border: none;
-                width: 222px;
-            }
-            button:hover {
-                background-color: #74cfb7;
-                border-color: #74cfb7;
-                transition: 0.3s;
-            }
-        }
     }
 }
 
-@media (max-width: 1200px){
-    .header {
-        width: 100%;
-    }
-}
 // /.navbar
 
 .navbar {
@@ -257,7 +215,6 @@ td a:hover {
         width: 1180px;
         height: 191px;
         background-color: #ffffff;
-        // чтобы внутренний div разместить по центру другого div
         margin: 0 auto;
         padding: 28px;
         margin-top: 80px;
@@ -508,7 +465,6 @@ td a:hover {
             text-decoration: none;
         }
     }
-    // при наведении на кнопку фон меняется и у png картинок
     .hero__buttons-call:hover {
         background-color: #079fc2;
         border-color: #079fc2;
@@ -545,7 +501,6 @@ td a:hover {
             text-decoration: none;
         }
     }
-    // при наведении на кнопку фон меняется и у png картинок
     .hero__buttons-write:hover {
         background-color: #079fc2;
         border-color: #079fc2;
@@ -577,7 +532,12 @@ td a:hover {
             position: static;
         }
     }
-    .container {
+    .map__container {
+        width: 1137px;
+        padding-right: 7px;
+        padding-left: 7px;
+        margin-right: auto;
+        margin-left: auto;
         .map-info {
             width: 507px;
             height: 373px;
@@ -650,7 +610,6 @@ td a:hover {
         .map__arrow {
             box-shadow: 0 11px 49px -35px rgba(0, 0, 0, 0.24);
             position: absolute;
-            // чтобы расположить стрелку в правом верхнем углу карты
             right: 0;
             position: absolute;
             margin-top: 46px;
@@ -765,13 +724,11 @@ td a:hover {
 // /.container
 
 .container-flats {
-    // width: 1440px;
     padding-bottom: 49px;
     margin-right: auto;
     margin-left: auto;
     background-color: #f7f7f7;
     .flats {
-        // padding: 28px;
         width: 1440px;
         background-color: #f7f7f7;
         padding-top: 60px;
@@ -841,7 +798,6 @@ td a:hover {
                                     font-weight: 400;
                                     .flat__table__price {
                                         padding-bottom: 5px;
-                                        // margin-top: 5px;
                                         span {
                                             width: 204px;
                                             height: 48px;
@@ -1020,25 +976,6 @@ td a:hover {
     }
 }
 
-// при таком размере экрана скрывать фото в объявлении
-@media screen and (max-width: 991px) {
-    .flat__photo {
-        // display: none;
-    }
-    // .header__name-address {
-    //     display: none;
-    // }
-    // .header__number-timetable {
-    //     display: none;
-    // }
-    // .header__wrap {
-    //     width: 451px;
-    // }
-    // .flat-text {
-    //     display: block;
-    // }
-}
-
 // /.footer
 
 .footer {
@@ -1117,7 +1054,6 @@ td a:hover {
         margin-top: 81px;
         margin-bottom: 87px;
         .footer__production-inside {
-            // margin-left: 130px;
             width: 1180px;
             margin: 0 auto;
             display: flex;
@@ -1127,7 +1063,6 @@ td a:hover {
                 font-family: Roboto, light;
                 font-size: 14px;
                 font-weight: 300;
-                // margin-right: 270px;
                 span {
                     margin: 0;
                 }

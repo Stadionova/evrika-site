@@ -10,29 +10,18 @@
     <style>
         @font-face {
             font-family: Roboto;
-            /* Имя шрифта */
             src: url(./fonts);
-            /* Путь к файлу со шрифтом */
         }
     </style>
 </head>
 
 <body>
     <script src="./dist/main.js"></script>
-    <!-- hero - это главная часть макета (шапка) -->
-    <!-- внутри header есть шапка и главный блок hero -->
-    <!-- navbar - это блок с навигацией -->
-    <!-- hero - это блок с картинкой и заголовком -->
-    <!-- header.header>.navbar+.hero|c -->
 
-    <div class="container__header">
+    <!-- /.header -->
+    <div class="header__container">
         <header class="header">
-            <!-- div.container|c -->
-            <!-- создала контейнер в навигационной панели -->
-            <!-- в контейнере создаю навигационную панель в шапке страницы с логотипом и меню -->
-            <!-- navbar__wrap - это блок с логотипом -->
             <div class="header__wrap">
-                <!-- создала обёртку для всего блока с логотипом и кнопками -->
                 <div class="header__logo">
                     <div class="header__logo-inside">
                         <img src="img/logo.png" alt="logo">
@@ -40,7 +29,6 @@
                 </div>
                 <div class="header__name-address">
                     <div class="header__name">
-                        <!-- использую тег span вместо тега p -->
                         <span>Агентство недвижимости</span>
                     </div>
                     <div class="header__address">
@@ -58,14 +46,11 @@
                 </div>
                 <div class="header__button"><button>Бесплатная консультация</button></div>
             </div>
-            <!-- /.container -->
-            <!-- создаю контейнер с заданной шириной  -->
-            <!-- /.navbar -->
-            <!-- hero - это блок с главной фото в шапке -->
         </header>
-        <!-- /.header -->
     </div>
+    <!-- /.header -->
 
+    <!-- /.navbar -->
     <div class="navbar">
         <div class="navbar__container">
             <div class="navbar__menu">
@@ -127,7 +112,6 @@
                 </div>
             </div>
         </div>
-
     </div>
     <div class="line"></div>
     </div>
@@ -217,15 +201,15 @@
             </div>
         </div>
     </div>
+    <!-- /.hero -->
 
-    <!-- <div class="container-map"> -->
     <!-- /.map -->
     <div class="map">
         <div class="map-yandex">
             <iframe src="https://yandex.ru/map-widget/v1/-/CCr5j1b" width="100%" height="509" frameborder="0"
                 style="border:0;" allowfullscreen=""></iframe>
         </div>
-        <div class="container">
+        <div class="map__container">
             <div id="mapInfo" class="map-info">
                 <div class="map__photo-house"><img src="img/photo-house__map.png" alt="house"></div>
                 <div class="map__text">
@@ -304,9 +288,8 @@
         </div>
     </div>
     <!-- /.map -->
-    <!-- </div> -->
 
-    <!-- /.container -->
+    <!-- /.flats -->
     <div class="container-flats">
         <div class="flats">
             <div class="flats-adv">
@@ -637,11 +620,9 @@
             <button><span>Все предложения</span></button>
         </div>
     </div>
-    </div>
     <!-- /.flats -->
-    </div>
-    <!-- /.hero -->
 
+    <!-- /.footer -->
     <footer class="footer">
         <div>
             <div class="footer__inside">
@@ -708,6 +689,7 @@
             </div>
         </div>
     </footer>
+    <!-- /.footer -->
 </body>
 
 </html>
