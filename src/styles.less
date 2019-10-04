@@ -1048,6 +1048,10 @@ tr {
             width: 1180px;
             margin: 0 auto;
             display: flex;
+            @media (max-width: 1180px){
+                width: 100%;
+                padding: 0 10px;
+            }
             .footer__year {
                 width: 613px;
                 color: #1f252d;
@@ -1072,12 +1076,6 @@ tr {
                     margin-right: 13px;
                 }
             }        
-        }
-        @media (max-width: 1180px){
-            .footer__production-inside {
-                width: 100%;
-                padding: 0 10px;
-            }
         }
     }
 }
