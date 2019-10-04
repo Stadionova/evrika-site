@@ -194,9 +194,9 @@ tr {
     height: 10px;
 }
 
-// /.hero
+// /.main-photo
 
-.hero {
+.main-photo {
     background: url(../img/main-photo.jpg) no-repeat center;
     background-size: cover;
     height: 419px;
@@ -210,14 +210,14 @@ tr {
         padding-top: 72px;
         margin: 0;
     }
-    .hero__slider {
+    .main-photo__slider {
         width: 1180px;
         height: 191px;
         background-color: #ffffff;
         margin: 0 auto;
         padding: 28px;
         margin-top: 80px;
-        .hero__slider__name {
+        .main-photo__slider-name {
             span {
             height: 17px;
             color: #1f252d;
@@ -226,7 +226,7 @@ tr {
             font-weight: 300;
             }
         }
-        .hero__slider__line {
+        .main-photo__slider-line {
             display: flex;
             margin-bottom: 20px;
             .slider {
@@ -348,7 +348,7 @@ tr {
     }
 }
 
-.table-div {
+.drop-down__menu-table {
     margin-top: 32px;
     background-color: #f7f7f7;
     table {
@@ -408,19 +408,20 @@ tr {
     }
 }
 
-.button-td button {
-    width: 152px;
-    height: 48px;
-    box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
-    border-radius: 4px;
-    background-color: #079fc2;
-    border: none;
-}
-
-.button-td button:hover {
-    background-color: #74cfb7;
-    border-color: #74cfb7;
-    transition: 0.3s;
+.button-td {
+    button {
+        width: 152px;
+        height: 48px;
+        box-shadow: 0 4px 10px rgba(116, 207, 183, 0.46);
+        border-radius: 4px;
+        background-color: #079fc2;
+        border: none;
+    }
+    button:hover {
+        background-color: #74cfb7;
+        border-color: #74cfb7;
+        transition: 0.3s;
+    }
 }
 
 .button-search span {
@@ -433,12 +434,12 @@ tr {
     text-transform: uppercase;
 }
 
-.hero__buttons {
+.main-photo__buttons {
     right: 0;
     top: 0;
     position: absolute;
     margin-top: 288px;
-    .hero__buttons-call {
+    .main-photo__buttons-call {
         width: 70px;
         height: 64px;
         border-radius: 4px 0 0 4px;
@@ -464,7 +465,7 @@ tr {
             text-decoration: none;
         }
     }
-    .hero__buttons-call:hover {
+    .main-photo__buttons-call:hover {
         background-color: #079fc2;
         border-color: #079fc2;
         transition: 0.3s;
@@ -474,7 +475,7 @@ tr {
             transition: 0.3s;
         }
     }
-    .hero__buttons-write {
+    .main-photo__buttons-write {
         width: 70px;
         height: 64px;
         border-radius: 4px 0 0 4px;
@@ -500,7 +501,7 @@ tr {
             text-decoration: none;
         }
     }
-    .hero__buttons-write:hover {
+    .main-photo__buttons-write:hover {
         background-color: #079fc2;
         border-color: #079fc2;
         transition: 0.3s;
@@ -518,7 +519,7 @@ tr {
     height: 535px;
     width: 100%;
     margin-bottom: 20px;
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         margin-bottom: 490px;
     }
     .map-yandex {
@@ -526,7 +527,7 @@ tr {
         width: 100%;
         padding: 20px;
     }
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
         .map-yandex {
             position: static;
         }
@@ -544,7 +545,7 @@ tr {
             box-shadow: 0 11px 49px -35px rgba(0, 0, 0, 0.24);
             margin-top: 61px;
             position: absolute;
-            @media (max-width: 768px){
+            @media (max-width: 768px) {
                 margin-left: 30px;
             }
             img {
@@ -668,7 +669,7 @@ tr {
                     font-family: Roboto, regular;
                     font-size: 13px;
                     font-weight: 400;
-                    .map__table__price {
+                    .map__table-price {
                         margin-bottom: 5px;
                         margin-top: 5px;
                         margin-left: 140px;
@@ -702,7 +703,7 @@ tr {
             transition: 0.3s;
         }
     }
-    .cross button {
+    .map__cross button {
         border: none;
         background-color: white;
         top: 0;
@@ -716,7 +717,7 @@ tr {
     }
 }
 
-.bottom-line-map {
+.map__table__bottom-line {
     border-bottom: 1px solid #e7e7e7;
 }
 
@@ -727,6 +728,12 @@ tr {
     margin-right: auto;
     margin-left: auto;
     background-color: #f7f7f7;
+    @media (min-width: 992px) and (max-width: 1199px) {
+        max-width: 960px;
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+        max-width: 750px;
+    }
     .flats {
         width: 1440px;
         background-color: #f7f7f7;
@@ -742,6 +749,9 @@ tr {
                 .flat-text {
                     margin-bottom: 52px;
                     display: flex;
+                    @media screen and (max-width: 991px) {
+                        display: block;
+                    }
                     .flat-info {
                         background-color: #ffffff;
                         height: 520px;
@@ -805,6 +815,9 @@ tr {
                                             font-size: 14px;
                                             font-weight: 400;
                                         }
+                                    }
+                                    .table__margin {
+                                        margin-top: 5px;
                                     }
                                 }
                             }
@@ -910,11 +923,6 @@ tr {
                         }
                     }
                 }
-                @media screen and (max-width: 991px) {
-                    .flat-text {
-                        display: block;
-                    }
-                }
             }
         }
     }
@@ -945,33 +953,17 @@ tr {
     }
 }
 
-.table__margin {
-    margin-top: 5px;
-}
-
-.flat__table__filled {
-    border-left: 1px solid #e7e7e7;
-    padding-left: 26px;
-}
-
-.bottom-line {
-    border-bottom: 1px solid #e7e7e7;
-}
-
-.flat-text-desc {
-    padding-top: 15px;
-    padding-bottom: 10px;
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .container-flats {
-        max-width: 960px;
+.flat__table {
+    .flat__table__filled {
+        border-left: 1px solid #e7e7e7;
+        padding-left: 26px;
     }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .container-flats {
-        max-width: 750px;
+    .bottom-line {
+        border-bottom: 1px solid #e7e7e7;
+    }
+    .flat-text-desc {
+        padding-top: 15px;
+        padding-bottom: 10px;
     }
 }
 
